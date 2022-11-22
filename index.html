@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <h1 class="name typo">SPLI<br>TTER</h1>
+  <div class="container">
+    <div class="info">
+      <p class="typo">Bill</p>
+      <div>
+        <img class="icon" src="/images/icon-dollar.svg">
+        <input id="total" class="bill-input aligner typo" type="text" placeholder="0">
+      </div>
+      <p class="tip-selector typo">Select Tip %</p>
+      <div class="tip-percentage flexer">
+        <div class="tip-row">
+          <div>
+            <button class="button typo" value="5" type="button">5%</button>
+          </div>
+          <div>
+            <button class="button typo" value="15" type="button">15%</button>
+          </div>
+          <div>
+            <button class="button typo" value="50" type="button">50%</button>
+          </div>
+        </div>
+        <div  class="tip-row">
+          <div>
+            <button class="button typo" value="10" type="button">10%</button>
+          </div>
+          <div>
+            <button class="button typo" value="25" type="button">25%</button>
+          </div>
+          <div>
+            <input id="custom-tip-percentage" class="bill-input custom-tip aligner typo" type="text" placeholder="Custom">
+          </div>
+        </div>
+      </div>
+      <div class="num-ppl-text flexer">
+        <p class="typo">Number of People</p>
+        <p id="zero-people" class="typo zero">Can't be zero</p>
+      </div>
+      <div class="num-ppl-input">
+        <img class="icon" src="/images/icon-person.svg">
+        <input id="numPeople" class="bill-input aligner typo" type="text" placeholder="0">
+      </div>
+    </div>
+    <div class="amounts">
+      <div class="flexer justifier">
+        <div>
+          <p class="tip-amount typo">Tip Amount</p>
+          <p class="per-person typo">/ person</p>
+        </div>
+        <div>
+          <p id="tipAmount" class="typo">$0.00</p>
+        </div>
+      </div>
+      <div class="flexer justifier">
+        <div>
+          <p class="total-amount typo">Total</p>
+          <p class="per-person typo">/ person</p>
+        </div>
+        <div>
+          <p id="totalPerPerson" class="typo">$0.00</p>
+        </div>
+      </div>
+      <button id="reset" class="reset-button typo" type="button">RESET</button>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
